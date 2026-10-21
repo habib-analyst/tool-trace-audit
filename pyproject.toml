@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tool-trace-audit"
+version = "0.1.0"
+description = "Open, deterministic, zero-LLM PT2D audit harness: localize label-predictive shortcuts to individual tool results in agentic LLM traces"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Habib Ur Rehman" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scikit-learn>=1.3"]
+
+[project.urls]
+Homepage = "https://github.com/habib-analyst/tool-trace-audit"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
